@@ -1,0 +1,19 @@
+CONTAINER
+Nome: meu-site-container
+Imagem: meu-site-debian:1.0
+Status observado: Up
+Portas: 0.0.0.0:8082->80/tcp e [::]:8082->80/tcp
+
+ARQUIVOS ENCONTRADOS EM /var/www/html
+index.html
+index.nginx-debian.html
+style.css
+
+TESTE HTTP
+Endereço: http://localhost:8082
+Status: 200
+Título: Meu site no Docker
+
+CONCLUSÃO
+A imagem foi construída, o container permaneceu em execução e o Nginx
+entregou corretamente a página compactada em meu_site.tar.
